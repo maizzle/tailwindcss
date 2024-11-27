@@ -1,6 +1,6 @@
 {
   "name": "@maizzle/tailwindcss",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Tailwind CSS v4 configuration for HTML emails",
   "publishConfig": {
     "access": "public"
