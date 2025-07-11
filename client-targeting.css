@@ -1,0 +1,13 @@
+@variant gmail (u + .body &);
+
+@variant gmail-android (div > u + .body &);
+
+@variant apple-mail (.Singleton &);
+
+@variant ios (@supports (-webkit-overflow-scrolling:touch) and (color:#ffff));
+@variant ios-15 (@supports (-webkit-overflow-scrolling:touch) and (aspect-ratio: 1 / 1));
+
+@variant ox (&[class^="ox-"] &);
+
+@variant ogsc ([data-ogsc] &);
+@variant ogsb ([data-ogsb] &);
