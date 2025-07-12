@@ -8,11 +8,13 @@
   "main": "index.css",
   "exports": {
     ".": "./index.css",
-    "./clients": "./clients.css"
+    "./clients": "./clients.css",
+    "./colors": "./theme/colors.css"
   },
   "files": [
     "index.css",
-    "clients.css"
+    "clients.css",
+    "theme/"
   ],
   "bugs": "https://github.com/maizzle/framework/issues",
   "homepage": "https://maizzle.com",
