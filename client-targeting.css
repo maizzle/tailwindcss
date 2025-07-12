@@ -21,8 +21,9 @@
   }
 }
 
-@variant ios (@supports (-webkit-overflow-scrolling:touch) and (color:#ffff));
-@variant ios-15 (@supports (-webkit-overflow-scrolling:touch) and (aspect-ratio: 1 / 1));
+@variant ios-10 (@supports (-webkit-overflow-scrolling:touch) and (color:#ffff));
+@variant ios-13 ([class^="apple-mail"] &);
+@variant ios (@supports (-webkit-overflow-scrolling:touch) and (aspect-ratio: 1 / 1));
 
 @variant notion (#mail-content-wrapper &);
 
