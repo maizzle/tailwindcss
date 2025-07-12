@@ -8,13 +8,14 @@
   "main": "index.css",
   "exports": {
     ".": "./index.css",
-    "./clients": "./clients.css",
     "./mso": "./mso.css",
-    "./colors": "./theme/colors.css",
+    "./clients": "./clients.css",
     "./text": "./theme/text.css",
+    "./colors": "./theme/colors.css",
     "./shadows": "./theme/shadows.css",
     "./filters": "./theme/filters.css",
-    "./spacing": "./theme/spacing.css"
+    "./spacing": "./theme/spacing.css",
+    "./borders": "./theme/borders.css"
   },
   "files": [
     "index.css",

@@ -1,0 +1,12 @@
+@theme {
+/* Border radius */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-2xl: 16px;
+    --radius-3xl: 24px;
+    --radius-4xl: 32px;
+}
