@@ -1,7 +1,7 @@
 {
   "name": "@maizzle/tailwindcss",
   "version": "0.1.0",
-  "description": "Tailwind CSS v4 configuration for HTML emails",
+  "description": "Tailwind CSS 4 configuration for HTML emails",
   "publishConfig": {
     "access": "public"
   },
@@ -9,6 +9,7 @@
   "exports": {
     ".": "./index.css",
     "./clients": "./clients.css",
+    "./mso": "./mso.css",
     "./colors": "./theme/colors.css",
     "./text": "./theme/text.css",
     "./shadows": "./theme/shadows.css",
@@ -18,6 +19,7 @@
   "files": [
     "index.css",
     "clients.css",
+    "mso.css",
     "theme/"
   ],
   "bugs": "https://github.com/maizzle/tailwindcss/issues",

@@ -5,6 +5,7 @@
 @import "./theme/filters.css";
 @import "./theme/spacing.css";
 
+@import "./mso.css";
 @import "./clients.css";
 @import "tailwindcss/utilities" important;
 

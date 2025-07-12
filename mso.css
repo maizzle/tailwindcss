@@ -1,0 +1,433 @@
+/*
+|-------------------------------------------------------------------------------
+| Utilities with predefined values
+|-------------------------------------------------------------------------------
+|
+| These utilities use predefined values, and some also support values from
+| your config, like spacing or colors.
+|
+*/
+
+@utility mso-ansi-font-size-* {
+  mso-ansi-font-size: --spacing(--value(integer));
+  mso-ansi-font-size: --value(
+    "large", "larger", "medium", "small", "smaller", "x-large", "x-small", "xx-large", "xx-small"
+  );
+}
+
+@utility mso-bidi-font-size-* {
+  mso-bidi-font-size: --spacing(--value(integer));
+  mso-bidi-font-size: --value(
+    "large", "larger", "medium", "small", "smaller", "x-large", "x-small", "xx-large", "xx-small"
+  );
+}
+
+@utility mso-ansi-font-style-* {
+  mso-ansi-font-style: --value("normal", "italic", "oblique");
+}
+
+@utility mso-bidi-font-style-* {
+  mso-bidi-font-style: --value("normal", "italic", "oblique");
+}
+
+@utility mso-ansi-font-weight-* {
+  mso-ansi-font-weight: --value("lighter", "normal", "bold", "bolder");
+}
+
+@utility mso-bidi-font-weight-* {
+  mso-bidi-font-weight: --value("lighter", "normal", "bold", "bolder");
+}
+
+@utility mso-ascii-font-family-* {
+  mso-ascii-font-family: --value("auto", "serif", "sans-serif", "monospace", "cursive", "fantasy");
+}
+
+@utility mso-bidi-font-family-* {
+  mso-bidi-font-family: --value("auto", "serif", "sans-serif", "monospace", "cursive", "fantasy");
+}
+
+@utility mso-arabic-font-family-* {
+  mso-arabic-font-family: --value("auto", "serif", "sans-serif", "monospace", "cursive", "fantasy");
+}
+
+@utility mso-bidi-flag-* {
+  mso-bidi-flag: --value("on", "off");
+}
+
+@utility mso-highlight-* {
+  mso-highlight: --value("auto", "windowtext");
+  mso-highlight: --value(--color-*);
+  mso-highlight: --value([*]);
+}
+
+@utility mso-generic-font-family-* {
+  mso-generic-font-family: --value("auto", "decorative", "modern", "roman", "script", "swiss");
+}
+
+@utility mso-font-alt-* {
+  mso-font-alt: --value(--font-*);
+  mso-font-alt: --value([*]);
+}
+
+@utility mso-element-frame-width-* {
+  mso-element-frame-width: --value("auto");
+  mso-element-frame-width: --spacing(--value(integer));
+  mso-element-frame-width: --value([*]);
+}
+
+@utility mso-element-frame-height-* {
+  mso-element-frame-height: --value("auto");
+  mso-element-frame-height: --spacing(--value(integer));
+  mso-element-frame-height: --value([*]);
+}
+
+@utility mso-element-* {
+  mso-element: --value(
+    "comment", "comment-list", "dropcap-dropped", "dropcap-in-margin", "endnote", "endnote-continuation-notice",
+    "endnote-continuation-separator", "endnote-list", "endnote-separator", "field-begin", "field-end",
+    "field-separator", "footer", "footnote", "footnote-continuation-notice", "footnote-continuation-separator",
+    "footnote-list", "footnote-separator", "frame", "header", "none", "paragraph-mark-properties", "table-head"
+  );
+  mso-element: --value([*]);
+}
+
+@utility mso-element-wrap-* {
+  mso-element-wrap: --value("none", "auto", "around",  "no-wrap-beside");
+  mso-element-wrap: --value([*]);
+}
+
+@utility mso-element-left-* {
+  mso-element-left: --value("center", "inside", "outside", "left", "right");
+  mso-element-left: --spacing(--value(integer));
+  mso-element-left: --value([*]);
+}
+@utility -mso-element-left-* {
+  mso-element-left: --spacing(--value(integer) * -1);
+}
+
+@utility mso-element-top-* {
+  mso-element-top: --value("bottom", "inside", "middle", "outside", "top");
+  mso-element-top: --spacing(--value(integer));
+  mso-element-top: --value([*]);
+}
+@utility -mso-element-top-* {
+  mso-element-top: --spacing(--value(integer) * -1);
+}
+
+@utility mso-hide-* {
+  mso-hide: --value("all", "none", "screen");
+  mso-hide: --value([*]);
+}
+
+@utility mso-color-alt-* {
+  mso-color-alt: --value("auto", "windowtext");
+  mso-color-alt: --value(--color-*);
+  mso-color-alt: --value([*]);
+}
+
+@utility mso-line-height-rule-* {
+  mso-line-height-rule: --value("exactly", "at-least");
+}
+
+@utility mso-line-height-alt-* {
+  mso-line-height-alt: --value("normal");
+  mso-line-height-alt: --spacing(--value(integer));
+  mso-line-height-alt: --value([*]);
+}
+@utility -mso-line-height-alt-* {
+  mso-line-height-alt: --spacing(--value(integer) * -1);
+}
+
+@utility text-underline-* {
+  text-underline: --value(
+    "auto", "dash", "dash-dot-dot-heavy", "dash-dot-heavy", "dashed-heavy", "dash-long", "dash-long-heavy", "dot-dash",
+    "dot-dot-dash", "dotted", "dotted-heavy", "double", "double-accounting", "none", "single", "single-accounting",
+    "thick", "wave", "wavy-double", "wavy-heavy", "windowtext", "word"
+  );
+}
+@utility text-underline-style-* {
+  text-underline-style: --value(
+    "auto", "dash", "dash-dot-dot-heavy", "dash-dot-heavy", "dashed-heavy", "dash-long", "dash-long-heavy", "dot-dash",
+    "dot-dot-dash", "dotted", "dotted-heavy", "double", "double-accounting", "none", "single", "single-accounting",
+    "thick", "wave", "wavy-double", "wavy-heavy", "windowtext", "word"
+  );
+}
+
+@utility text-underline-color-* {
+  text-underline-color: --value("auto", "windowtext");
+  text-underline-color: --value(--color-*);
+  text-underline-color: --value([*]);
+}
+
+@utility mso-special-format-bullet {
+  mso-special-format: bullet;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Spacing utilities
+|-------------------------------------------------------------------------------
+|
+| These utilities are based on the spacing scale from your config. Some also
+| support negative values.
+|
+*/
+
+@utility mso-text-raise-* {
+  mso-text-raise: --spacing(--value(integer));
+  mso-text-raise: --value([*]);
+}
+@utility -mso-text-raise-* {
+  mso-text-raise: --spacing(--value(integer) * -1);
+}
+
+/* mso-padding */
+@utility mso-padding-alt-* {
+  mso-padding-alt: --spacing(--value(integer));
+  mso-padding-alt: --value([*]);
+}
+@utility mso-padding-top-alt-* {
+  mso-padding-top-alt: --spacing(--value(integer));
+  mso-padding-top-alt: --value([*]);
+}
+@utility mso-padding-right-alt-* {
+  mso-padding-right-alt: --spacing(--value(integer));
+  mso-padding-right-alt: --value([*]);
+}
+@utility mso-padding-bottom-alt-* {
+  mso-padding-bottom-alt: --spacing(--value(integer));
+  mso-padding-bottom-alt: --value([*]);
+}
+@utility mso-padding-left-alt-* {
+  mso-padding-left-alt: --spacing(--value(integer));
+  mso-padding-left-alt: --value([*]);
+}
+
+/* mso-margin */
+@utility mso-margin-alt-* {
+  mso-margin-alt: --spacing(--value(integer));
+  mso-margin-alt: --value([*]);
+}
+@utility -mso-margin-alt-* {
+  mso-margin-alt: --spacing(--value(integer) * -1);
+}
+@utility mso-margin-top-alt-* {
+  mso-margin-top-alt: --spacing(--value(integer));
+  mso-margin-top-alt: --value([*]);
+}
+@utility -mso-margin-top-alt-* {
+  mso-margin-top-alt: --spacing(--value(integer) * -1);
+}
+@utility mso-margin-right-alt-* {
+  mso-margin-right-alt: --spacing(--value(integer));
+  mso-margin-right-alt: --value([*]);
+}
+@utility -mso-margin-right-alt-* {
+  mso-margin-right-alt: --spacing(--value(integer) * -1);
+}
+@utility mso-margin-bottom-alt-* {
+  mso-margin-bottom-alt: --spacing(--value(integer));
+  mso-margin-bottom-alt: --value([*]);
+}
+@utility -mso-margin-bottom-alt-* {
+  mso-margin-bottom-alt: --spacing(--value(integer) * -1);
+}
+@utility mso-margin-left-alt-* {
+  mso-margin-left-alt: --spacing(--value(integer));
+  mso-margin-left-alt: --value([*]);
+}
+@utility -mso-margin-left-alt-* {
+  mso-margin-left-alt: --spacing(--value(integer) * -1);
+}
+
+/* mso-para-margin */
+@utility mso-para-margin-* {
+  mso-para-margin: --spacing(--value(integer));
+  mso-para-margin: --value([*]);
+}
+@utility -mso-para-margin-* {
+  mso-para-margin: --spacing(--value(integer) * -1);
+}
+@utility mso-para-margin-top-* {
+  mso-para-margin-top: --spacing(--value(integer));
+  mso-para-margin-top: --value([*]);
+}
+@utility -mso-para-margin-top-* {
+  mso-para-margin-top: --spacing(--value(integer) * -1);
+}
+@utility mso-para-margin-right-* {
+  mso-para-margin-right: --spacing(--value(integer));
+  mso-para-margin-right: --value([*]);
+}
+@utility -mso-para-margin-right-* {
+  mso-para-margin-right: --spacing(--value(integer) * -1);
+}
+@utility mso-para-margin-bottom-* {
+  mso-para-margin-bottom: --spacing(--value(integer));
+  mso-para-margin-bottom: --value([*]);
+}
+@utility -mso-para-margin-bottom-* {
+  mso-para-margin-bottom: --spacing(--value(integer) * -1);
+}
+@utility mso-para-margin-left-* {
+  mso-para-margin-left: --spacing(--value(integer));
+  mso-para-margin-left: --value([*]);
+}
+@utility -mso-para-margin-left-* {
+  mso-para-margin-left: --spacing(--value(integer) * -1);
+}
+
+/* mso-text-indent-alt */
+@utility mso-text-indent-alt-* {
+  mso-text-indent-alt: --spacing(--value(integer));
+  mso-text-indent-alt: --value([*]);
+}
+@utility -mso-text-indent-alt-* {
+  mso-text-indent-alt: --spacing(--value(integer) * -1);
+}
+
+/* mso-table-{?}space */
+@utility mso-table-tspace-* {
+  mso-table-tspace: --spacing(--value(integer));
+  mso-table-tspace: --value([*]);
+}
+@utility -mso-table-tspace-* {
+  mso-table-tspace: --spacing(--value(integer) * -1);
+}
+@utility mso-table-rspace-* {
+  mso-table-rspace: --spacing(--value(integer));
+  mso-table-rspace: --value([*]);
+}
+@utility -mso-table-rspace-* {
+  mso-table-rspace: --spacing(--value(integer) * -1);
+}
+@utility mso-table-bspace-* {
+  mso-table-bspace: --spacing(--value(integer));
+  mso-table-bspace: --value([*]);
+}
+@utility -mso-table-bspace-* {
+  mso-table-bspace: --spacing(--value(integer) * -1);
+}
+@utility mso-table-lspace-* {
+  mso-table-lspace: --spacing(--value(integer));
+  mso-table-lspace: --value([*]);
+}
+@utility -mso-table-lspace-* {
+  mso-table-lspace: --spacing(--value(integer) * -1);
+}
+
+/* mso-font-width */
+@utility mso-font-width-* {
+  mso-font-width: --spacing(--value(integer));
+  mso-font-width: --value([*]);
+}
+
+/* mso-shading */
+@utility mso-shading-* {
+  mso-shading: --value("auto", "windowtext", "transparent");
+  mso-shading: --value(--color-*);
+  mso-shading: --value([*]);
+}
+
+/* mso-shadow-color */
+@utility mso-shadow-color-* {
+  mso-shadow-color: --value("auto", "windowtext");
+  mso-shadow-color: --value(--color-*);
+  mso-shadow-color: --value([*]);
+}
+
+/* mso-element-frame-vspace, mso-element-frame-hspace */
+@utility mso-element-frame-vspace-* {
+  mso-element-frame-vspace: --spacing(--value(integer));
+  mso-element-frame-vspace: --value([*]);
+}
+@utility -mso-element-frame-vspace-* {
+  mso-element-frame-vspace: --spacing(--value(integer) * -1);
+}
+@utility mso-element-frame-hspace-* {
+  mso-element-frame-hspace: --spacing(--value(integer));
+  mso-element-frame-hspace: --value([*]);
+}
+@utility -mso-element-frame-hspace-* {
+  mso-element-frame-hspace: --spacing(--value(integer) * -1);
+}
+
+/* mso-border-* colors */
+@utility mso-border-alt-* {
+  mso-border-alt: --value(--color-*);
+  mso-border-alt: --value([*]);
+}
+@utility mso-border-between-* {
+  mso-border-between: --value(--color-*);
+  mso-border-between: --value([*]);
+}
+@utility mso-border-bottom-alt-* {
+  mso-border-bottom-alt: --value(--color-*);
+  mso-border-bottom-alt: --value([*]);
+}
+@utility mso-border-left-alt-* {
+  mso-border-left-alt: --value(--color-*);
+  mso-border-left-alt: --value([*]);
+}
+@utility mso-border-right-alt-* {
+  mso-border-right-alt: --value(--color-*);
+  mso-border-right-alt: --value([*]);
+}
+@utility mso-border-top-alt-* {
+  mso-border-top-alt: --value(--color-*);
+  mso-border-top-alt: --value([*]);
+}
+
+/* mso-border widths */
+@utility mso-border-between-width-* {
+  mso-border-between-width: --value("thin", "medium", "thick");
+  mso-border-between-width: --spacing(--value(integer));
+  mso-border-between-width: --value([*]);
+}
+@utility mso-border-width-alt-* {
+  mso-border-width-alt: --value("thin", "medium", "thick");
+  mso-border-width-alt: --spacing(--value(integer));
+  mso-border-width-alt: --value([*]);
+}
+@utility mso-border-bottom-width-alt-* {
+  mso-border-bottom-width-alt: --value("thin", "medium", "thick");
+  mso-border-bottom-width-alt: --spacing(--value(integer));
+  mso-border-bottom-width-alt: --value([*]);
+}
+@utility mso-border-left-width-alt-* {
+  mso-border-left-width-alt: --value("thin", "medium", "thick");
+  mso-border-left-width-alt: --spacing(--value(integer));
+  mso-border-left-width-alt: --value([*]);
+}
+@utility mso-border-right-width-alt-* {
+  mso-border-right-width-alt: --value("thin", "medium", "thick");
+  mso-border-right-width-alt: --spacing(--value(integer));
+  mso-border-right-width-alt: --value([*]);
+}
+@utility mso-border-top-width-alt-* {
+  mso-border-top-width-alt: --value("thin", "medium", "thick");
+  mso-border-top-width-alt: --spacing(--value(integer));
+  mso-border-top-width-alt: --value([*]);
+}
+
+/* mso-border-*-source */
+@utility mso-border-bottom-source-* {
+  mso-border-bottom-source: --value("auto", "background", 'foreground');
+}
+@utility mso-border-left-source-* {
+  mso-border-left-source: --value("auto", "background", 'foreground');
+}
+@utility mso-border-right-source-* {
+  mso-border-right-source: --value("auto", "background", 'foreground');
+}
+@utility mso-border-top-source-* {
+  mso-border-top-source: --value("auto", "background", 'foreground');
+}
+
+@utility mso-border-shadow-* {
+  mso-border-shadow: --value("yes", "no");
+}
+
+@utility mso-border-effect-* {
+  mso-border-shadow: --value("3d", "box");
+}
