@@ -1,5 +1,12 @@
 @variant gmail (u + .body &);
 @variant gmail-android (div > u + .body &);
+@custom-variant gmail-ipad {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+    u + .body & {
+      @slot;
+    }
+  }
+}
 
 @variant apple-mail-10 (.Singleton &);
 @variant apple-mail ([class^="apple-mail"] &);
