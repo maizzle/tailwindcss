@@ -1,5 +1,4 @@
 @variant gmail (u + .body &);
-
 @variant gmail-android (div > u + .body &);
 
 @variant apple-mail-10 (.Singleton &);
@@ -14,3 +13,7 @@
 @variant ogsb ([data-ogsb] &);
 
 @variant comcast (.mail-detail-content &);
+
+@variant edison (#edo-container &);
+@variant edison-ios (.edo &);
+@variant edison-android (.edo-email-view &);
