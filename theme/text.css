@@ -1,0 +1,34 @@
+/* text-decoration */
+@utility underline { text-decoration: underline; }
+@utility overline { text-decoration: overline; }
+@utility line-through { text-decoration: line-through; }
+@utility no-underline { text-decoration: none; }
+
+@theme {
+  --text-*: initial;
+
+  /* Font family */
+  --font-inter: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, Menlo, Consolas, monospace;
+
+  /* Use `px` values for font-size */
+  --text-0: 0;
+  --text-xxs: 11px;
+  --text-xs: 12px;
+  --text-2xs: 13px;
+  --text-sm: 14px;
+  --text-2sm: 15px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 60px;
+  --text-7xl: 72px;
+  --text-8xl: 96px;
+  --text-9xl: 128px;
+}

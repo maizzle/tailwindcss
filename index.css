@@ -1,7 +1,9 @@
 @import "tailwindcss/theme";
 @import "./theme/colors.css";
+@import "./theme/text.css";
+
+@import "./client-targeting.css";
 @import "tailwindcss/utilities" important;
-@import "./clients.css";
 
 /* Breakpoints */
 @variant sm (@media (max-width: 600px));
@@ -13,8 +15,6 @@
   /* Unset some namespaces */
   --breakpoint-*: initial;
   
-  --text-*: initial;
-  
   --shadow-*: initial;
   --blur-*: initial;
   
@@ -22,31 +22,6 @@
 
   /* Set the spacing scale base */
   --spacing: 4px;
-
-  /* Font family */
-  --font-inter: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: ui-monospace, Menlo, Consolas, monospace;
-
-  /* Use `px` values for font-size */
-  --text-0: 0;
-  --text-xxs: 11px;
-  --text-xs: 12px;
-  --text-2xs: 13px;
-  --text-sm: 14px;
-  --text-2sm: 15px;
-  --text-base: 16px;
-  --text-lg: 18px;
-  --text-xl: 20px;
-  --text-2xl: 24px;
-  --text-3xl: 30px;
-  --text-4xl: 36px;
-  --text-5xl: 48px;
-  --text-6xl: 60px;
-  --text-7xl: 72px;
-  --text-8xl: 96px;
-  --text-9xl: 128px;
 
   /* Containers (wip) */
   --container-3xs: 256px;
@@ -95,12 +70,6 @@
 @utility shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); }
 @utility shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
 @utility shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
-
-/* text-decoration */
-@utility underline { text-decoration: underline; }
-@utility overline { text-decoration: overline; }
-@utility line-through { text-decoration: line-through; }
-@utility no-underline { text-decoration: none; }
 
 /* filter */
 @utility blur-0 { filter: blur(0); }
