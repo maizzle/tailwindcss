@@ -1,3 +1,16 @@
+@variant airmail (.bloop_container &);
+
+@variant apple-mail-10 (.Singleton &);
+@variant apple-mail ([class^="apple-mail"] &);
+
+@variant comcast (.mail-detail-content &);
+
+@variant edison (#edo-container &);
+@variant edison-ios (.edo &);
+@variant edison-android (.edo-email-view &);
+
+@variant freenet (body[marginwidth][marginheight] &);
+
 @variant gmail (u + .body &);
 @variant gmail-android (div > u + .body &);
 @custom-variant gmail-ipad {
@@ -8,32 +21,23 @@
   }
 }
 
-@variant apple-mail-10 (.Singleton &);
-@variant apple-mail ([class^="apple-mail"] &);
-
 @variant ios (@supports (-webkit-overflow-scrolling:touch) and (color:#ffff));
 @variant ios-15 (@supports (-webkit-overflow-scrolling:touch) and (aspect-ratio: 1 / 1));
+
+@variant notion (#mail-content-wrapper &);
 
 @variant ox (&[class^="ox-"] &);
 
 @variant ogsc ([data-ogsc] &);
 @variant ogsb ([data-ogsb] &);
 
-@variant comcast (.mail-detail-content &);
-
-@variant edison (#edo-container &);
-@variant edison-ios (.edo &);
-@variant edison-android (.edo-email-view &);
-
-@variant notion (#mail-content-wrapper &);
-
 @variant outlook-mac (#converted-body &);
 @variant outlook-android (#converted-body &);
-
-@variant thunderbird (.moz-text-html &);
 
 @variant spark (.c17637 &);
 
 @variant superhuman (.ShadowHTML &);
+
+@variant thunderbird (.moz-text-html &);
 
 @variant yahoo (.\& &);
