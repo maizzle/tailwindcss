@@ -29,3 +29,5 @@
 
 @variant outlook-mac (#converted-body &);
 @variant outlook-android (#converted-body &);
+
+@variant thunderbird (.moz-text-html &);
