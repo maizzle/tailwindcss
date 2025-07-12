@@ -1,4 +1,4 @@
-/* text-decoration */
+/* Prefer `text-decoration` over `text-decoration-line` */
 @utility underline { text-decoration: underline; }
 @utility overline { text-decoration: overline; }
 @utility line-through { text-decoration: line-through; }

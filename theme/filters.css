@@ -1,0 +1,13 @@
+@theme {
+  --blur-*: initial;
+}
+
+/* Blur filters */
+@utility blur-0 { filter: blur(0); }
+@utility blur-xs { filter: blur(4px); }
+@utility blur-sm { filter: blur(8px); }
+@utility blur-md { filter: blur(12px); }
+@utility blur-lg { filter: blur(16px); }
+@utility blur-xl { filter: blur(24px); }
+@utility blur-2xl { filter: blur(40px); }
+@utility blur-3xl { filter: blur(64px); }

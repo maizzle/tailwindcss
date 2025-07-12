@@ -11,7 +11,8 @@
     "./clients": "./clients.css",
     "./colors": "./theme/colors.css",
     "./text": "./theme/text.css",
-    "./shadows": "./theme/shadows.css"
+    "./shadows": "./theme/shadows.css",
+    "./filters": "./theme/filters.css"
   },
   "files": [
     "index.css",

@@ -2,6 +2,7 @@
 @import "./theme/colors.css";
 @import "./theme/text.css";
 @import "./theme/shadows.css";
+@import "./theme/filters.css";
 
 @import "./client-targeting.css";
 @import "tailwindcss/utilities" important;
@@ -15,8 +16,6 @@
 @theme {
   /* Unset some namespaces */
   --breakpoint-*: initial;
-  
-  --blur-*: initial;
   
   --animate-*: initial;
 
@@ -49,13 +48,3 @@
   --radius-3xl: 24px;
   --radius-4xl: 32px;
 }
-
-/* filter */
-@utility blur-0 { filter: blur(0); }
-@utility blur-xs { filter: blur(4px); }
-@utility blur-sm { filter: blur(8px); }
-@utility blur-md { filter: blur(12px); }
-@utility blur-lg { filter: blur(16px); }
-@utility blur-xl { filter: blur(24px); }
-@utility blur-2xl { filter: blur(40px); }
-@utility blur-3xl { filter: blur(64px); }
