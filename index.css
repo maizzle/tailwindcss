@@ -1,6 +1,6 @@
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities" important;
-@import "./client-targeting.css";
+@import "./clients.css";
 
 /* Breakpoints */
 @variant sm (@media (max-width: 600px));

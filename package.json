@@ -7,10 +7,12 @@
   },
   "main": "index.css",
   "exports": {
-    ".": "./index.css"
+    ".": "./index.css",
+    "./clients": "./clients.css"
   },
   "files": [
-    "index.css"
+    "index.css",
+    "clients.css"
   ],
   "bugs": "https://github.com/maizzle/framework/issues",
   "homepage": "https://maizzle.com",
