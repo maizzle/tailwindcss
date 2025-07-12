@@ -24,3 +24,5 @@
 @variant edison (#edo-container &);
 @variant edison-ios (.edo &);
 @variant edison-android (.edo-email-view &);
+
+@variant notion (#mail-content-wrapper &);
