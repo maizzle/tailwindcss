@@ -12,3 +12,5 @@
 
 @variant ogsc ([data-ogsc] &);
 @variant ogsb ([data-ogsb] &);
+
+@variant comcast (.mail-detail-content &);
