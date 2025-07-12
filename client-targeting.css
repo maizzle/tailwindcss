@@ -2,7 +2,8 @@
 
 @variant gmail-android (div > u + .body &);
 
-@variant apple-mail (.Singleton &);
+@variant apple-mail-10 (.Singleton &);
+@variant apple-mail ([class^="apple-mail"] &);
 
 @variant ios (@supports (-webkit-overflow-scrolling:touch) and (color:#ffff));
 @variant ios-15 (@supports (-webkit-overflow-scrolling:touch) and (aspect-ratio: 1 / 1));
