@@ -10,7 +10,8 @@
     ".": "./index.css",
     "./clients": "./clients.css",
     "./colors": "./theme/colors.css",
-    "./text": "./theme/text.css"
+    "./text": "./theme/text.css",
+    "./shadows": "./theme/shadows.css"
   },
   "files": [
     "index.css",
