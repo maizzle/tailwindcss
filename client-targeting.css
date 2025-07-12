@@ -26,3 +26,6 @@
 @variant edison-android (.edo-email-view &);
 
 @variant notion (#mail-content-wrapper &);
+
+@variant outlook-mac (#converted-body &);
+@variant outlook-android (#converted-body &);
