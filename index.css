@@ -3,39 +3,16 @@
 @import "./theme/text.css";
 @import "./theme/shadows.css";
 @import "./theme/filters.css";
+@import "./theme/spacing.css";
 
-@import "./client-targeting.css";
+@import "./clients.css";
 @import "tailwindcss/utilities" important;
 
-/* Breakpoints */
-@variant sm (@media (max-width: 600px));
-@variant xs (@media (max-width: 430px));
-
-@variant hover (&:hover);
-
+/* Resets */
 @theme {
   /* Unset some namespaces */
   --breakpoint-*: initial;
-  
   --animate-*: initial;
-
-  /* Set the spacing scale base */
-  --spacing: 4px;
-
-  /* Containers (wip) */
-  --container-3xs: 256px;
-  --container-2xs: 288px;
-  --container-xs: 320px;
-  --container-sm: 384px;
-  --container-md: 448px;
-  --container-lg: 512px;
-  --container-xl: 576px;
-  --container-2xl: 672px;
-  --container-3xl: 768px;
-  --container-4xl: 896px;
-  --container-5xl: 1024px;
-  --container-6xl: 1152px;
-  --container-7xl: 1280px;
 
   /* Border radius */
   --radius-xs: 2px;
@@ -48,3 +25,10 @@
   --radius-3xl: 24px;
   --radius-4xl: 32px;
 }
+
+/* Breakpoints */
+@variant sm (@media (max-width: 600px));
+@variant xs (@media (max-width: 430px));
+
+/* Prefer pseudo over @media (hover: hover) */
+@variant hover (&:hover);

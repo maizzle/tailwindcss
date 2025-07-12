@@ -12,7 +12,8 @@
     "./colors": "./theme/colors.css",
     "./text": "./theme/text.css",
     "./shadows": "./theme/shadows.css",
-    "./filters": "./theme/filters.css"
+    "./filters": "./theme/filters.css",
+    "./spacing": "./theme/spacing.css"
   },
   "files": [
     "index.css",
