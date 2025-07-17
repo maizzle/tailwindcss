@@ -2,6 +2,10 @@
   "name": "@maizzle/tailwindcss",
   "version": "1.0.1",
   "description": "Tailwind CSS 4 configuration for HTML emails",
+  "author": "Cosmin Popovici (https://github.com/cossssmin)",
+  "homepage": "https://maizzle.com",
+  "bugs": "https://github.com/maizzle/tailwindcss/issues",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -23,15 +27,11 @@
     "mso.css",
     "theme/"
   ],
-  "bugs": "https://github.com/maizzle/tailwindcss/issues",
-  "homepage": "https://maizzle.com",
-  "author": "Cosmin Popovici (https://github.com/cossssmin)",
   "keywords": [
     "maizzle",
     "tailwindcss",
     "reset",
     "css",
     "email-targeting"
-  ],
-  "license": "MIT"
+  ]
 }
