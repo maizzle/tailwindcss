@@ -13,6 +13,8 @@
   "exports": {
     ".": "./index.css",
     "./mso": "./mso.css",
+    "./reset": "./reset.css",
+    "./screens": "./screens.css",
     "./clients": "./clients.css",
     "./text": "./theme/text.css",
     "./colors": "./theme/colors.css",
@@ -23,6 +25,8 @@
   },
   "files": [
     "index.css",
+    "reset.css",
+    "screens.css",
     "clients.css",
     "mso.css",
     "theme/"
@@ -32,6 +36,7 @@
     "tailwindcss",
     "reset",
     "css",
+    "email-css",
     "email-targeting"
   ]
 }
