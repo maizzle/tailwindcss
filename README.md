@@ -19,8 +19,19 @@ Then, import it in your project's CSS file:
 You may also import individual configurations:
 
 ```css
+/* Base resets */
+@import "@maizzle/tailwindcss/reset.css";
+
+/* Custom breakpoints */
+@import "@maizzle/tailwindcss/screens.css";
+
+/* mso-* utilities */
 @import '@maizzle/tailwindcss/mso';
+
+/* Email client targeting utilities */
 @import '@maizzle/tailwindcss/clients';
+
+/* Theme customizations */
 @import '@maizzle/tailwindcss/theme/colors';
 @import '@maizzle/tailwindcss/theme/text';
 @import '@maizzle/tailwindcss/theme/shadows';
@@ -29,7 +40,7 @@ You may also import individual configurations:
 @import '@maizzle/tailwindcss/theme/borders';
 ```
 
-Note: for Tailwind CSS Intellisense to work, make sure you import this package in an actual .css file in your project.
+Note: for Tailwind CSS Intellisense to work, make sure to import this package in an actual .css file in your project.
 
 ## Namespaces
 
@@ -37,10 +48,10 @@ The following namespaces are customized by this package:
 
 - `--breakpoint-*` - breakpoints are reset and only include `xs` and `sm`
 - `--spacing` - spacing utilities use a `px` scale instead of `rem`
-- `--color-*` - oklch colors have been replaced with their HEX equivalents
+- `--color-*` - `oklch` colors have been replaced with their HEX equivalents
 - `--text-*` - font sizes use a `px` spacing scale instead of `rem`
 - `--font-*` - font families are set to use custom font stacks that are more compatible with email clients
-- `--shadow-*` - custom shadow utilties
+- `--shadow-*` - custom shadow utilities
 - `--blur-*` - custom filter utilities
 - borders - custom border radius utilities
 - `--animate-*` - this namespace is disabled
@@ -56,7 +67,7 @@ The package registers a few custom variants:
 
 ### Hover variant
 
-The `hover:` variant has been overridden to use a `:hover` pseudo-class instead of a `@media` query, just like in Tailwind CSS v3.
+The `hover:` variant has been overridden in `reset.css` to use a `:hover` pseudo-class instead of a `@media` query, just like in Tailwind CSS v3.
 
 ## Email targeting variants
 

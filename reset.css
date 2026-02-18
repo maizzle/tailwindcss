@@ -1,0 +1,6 @@
+@theme {
+  --animate-*: initial;
+}
+
+/* Prefer pseudo over @media (hover: hover) */
+@variant hover (&:hover);

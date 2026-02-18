@@ -1,4 +1,8 @@
 @import "tailwindcss/theme";
+
+@import "./reset.css";
+@import "./screens.css";
+
 @import "./theme/colors.css";
 @import "./theme/text.css";
 @import "./theme/shadows.css";
@@ -8,18 +12,5 @@
 
 @import "./mso.css";
 @import "./clients.css";
+
 @import "tailwindcss/utilities" important;
-
-/* Resets */
-@theme {
-  /* Unset some namespaces */
-  --breakpoint-*: initial;
-  --animate-*: initial;
-}
-
-/* Breakpoints */
-@variant sm (@media (max-width: 600px));
-@variant xs (@media (max-width: 430px));
-
-/* Prefer pseudo over @media (hover: hover) */
-@variant hover (&:hover);

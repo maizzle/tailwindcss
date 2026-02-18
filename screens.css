@@ -1,0 +1,6 @@
+@theme {
+  --breakpoint-*: initial;
+}
+
+@variant sm (@media (max-width: 600px));
+@variant xs (@media (max-width: 430px));
