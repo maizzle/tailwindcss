@@ -20,10 +20,10 @@ You may also import individual configurations:
 
 ```css
 /* Base resets */
-@import "@maizzle/tailwindcss/reset.css";
+@import "@maizzle/tailwindcss/reset";
 
 /* Custom breakpoints */
-@import "@maizzle/tailwindcss/screens.css";
+@import "@maizzle/tailwindcss/screens";
 
 /* mso-* utilities */
 @import '@maizzle/tailwindcss/mso';
@@ -32,12 +32,12 @@ You may also import individual configurations:
 @import '@maizzle/tailwindcss/clients';
 
 /* Theme customizations */
-@import '@maizzle/tailwindcss/theme/colors';
-@import '@maizzle/tailwindcss/theme/text';
-@import '@maizzle/tailwindcss/theme/shadows';
-@import '@maizzle/tailwindcss/theme/filters';
-@import '@maizzle/tailwindcss/theme/spacing';
-@import '@maizzle/tailwindcss/theme/borders';
+@import '@maizzle/tailwindcss/text';
+@import '@maizzle/tailwindcss/colors';
+@import '@maizzle/tailwindcss/shadows';
+@import '@maizzle/tailwindcss/filters';
+@import '@maizzle/tailwindcss/spacing';
+@import '@maizzle/tailwindcss/borders';
 ```
 
 Note: for Tailwind CSS Intellisense to work, make sure to import this package in an actual .css file in your project.
