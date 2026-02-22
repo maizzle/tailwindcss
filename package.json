@@ -36,6 +36,7 @@
     "tailwindcss",
     "reset",
     "css",
+    "html-emails",
     "email-css",
     "email-targeting"
   ]
