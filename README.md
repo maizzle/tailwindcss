@@ -2,21 +2,21 @@
 
 This package exports a **Tailwind CSS 4 configuration** file that can be used to make the CSS output more email client-friendly. The output will still contain modern CSS syntax, so it needs lowering with a tool like [Lightning CSS](https://lightningcss.dev/transpilation.html).
 
-## Usage
-
-First, install the package:
+## Installation
 
 ```sh
 npm install @maizzle/tailwindcss
 ```
 
-Then, import it in your project's CSS file:
+## Usage
+
+Import it in your project's CSS file:
 
 ```css
 @import '@maizzle/tailwindcss';
 ```
 
-You may also import individual configurations:
+You may also import configurations individually:
 
 ```css
 /* Base resets */
@@ -48,7 +48,7 @@ The following namespaces are customized by this package:
 - `--spacing` - spacing utilities use a `px` scale instead of `rem`
 - `--color-*` - `oklch` colors have been replaced with their HEX equivalents
 - `--text-*` - font sizes use a `px` spacing scale instead of `rem`
-- `--font-*` - font families are set to use custom font stacks that are more compatible with email clients
+- `--font-*` - uses custom font stacks that are more compatible with email clients
 - `--shadow-*` - custom shadow utilities
 - `--blur-*` - custom filter utilities
 - borders - custom border radius utilities
@@ -67,9 +67,9 @@ The `screens` configuration has been overridden to include only two breakpoints:
 
 ### hover:
 
-The `hover:` variant has been overridden in `reset.css` to use a `:hover` pseudo-class instead of a `@media` query, just like in Tailwind CSS v3.
+The `hover:` variant has been customized to use a `:hover` pseudo-class instead of `@media`.
 
-Nested media queries, which Tailwind CSS 4 outputs by default, have [poor support in email clients](https://www.caniemail.com/features/css-at-media/) and cannot be grouped to reduce the size of the HTML.
+Nested media queries, which Tailwind CSS 4 uses by default for these, have [poor support in email clients](https://www.caniemail.com/features/css-at-media/) and cannot be grouped to reduce the size of the HTML.
 
 ### Email client targeting
 
