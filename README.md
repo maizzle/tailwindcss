@@ -1,6 +1,6 @@
 ## About
 
-This package exports a **Tailwind CSS 4 configuration** file that can be used to make the CSS output more email client-friendly. The output will still contain modern CSS syntax, so it needs lowering with a tool like Lightning CSS.
+This package exports a **Tailwind CSS 4 configuration** file that can be used to make the CSS output more email client-friendly. The output will still contain modern CSS syntax, so it needs lowering with a tool like [Lightning CSS](https://lightningcss.dev/transpilation.html).
 
 ## Usage
 
@@ -40,8 +40,6 @@ You may also import individual configurations:
 @import '@maizzle/tailwindcss/borders';
 ```
 
-Note: for Tailwind CSS Intellisense to work, make sure to import this package in an actual .css file in your project.
-
 ## Namespaces
 
 The following namespaces are customized by this package:
@@ -58,55 +56,59 @@ The following namespaces are customized by this package:
 
 ## Variants
 
-The package registers a few custom variants:
+The package registers a few custom variants.
 
-### Breakpoint variants
+### Breakpoints
+
+The `screens` configuration has been overridden to include only two breakpoints:
 
 - `sm` - max-width: 600px
 - `xs` - max-width: 430px
 
-### Hover variant
+### hover:
 
 The `hover:` variant has been overridden in `reset.css` to use a `:hover` pseudo-class instead of a `@media` query, just like in Tailwind CSS v3.
 
-## Email targeting variants
+Nested media queries, which Tailwind CSS 4 outputs by default, have [poor support in email clients](https://www.caniemail.com/features/css-at-media/) and cannot be grouped to reduce the size of the HTML.
 
-The config includes variants for targeting specific email clients. These can be used to apply styles conditionally based on the client.
+### Email client targeting
 
-- Airmail - `airmail:`
-- Apple Mail
-    - `apple-mail-10:` to target Apple Mail 10
-    - `apple-mail:` to target Apple Mail 12 and later
-- Comcast - `comcast:`
-- Edison (iOS, Android) - `edison:`
-- Freenet - `freenet:`
-- Gmail (web, Android, iPad)
-    - `gmail:` to target Gmail web
-    - `gmail-android:` to target Gmail Android
-    - `gmail-ipad:` to target Gmail on the iPad
-- iOS Mail
-    - `ios-10:` to target iOS 10
-    - `ios-13:` to target iOS 13
-    - `ios-15:` to target iOS 15 and later
-- Notion - `notion:`
-- Open-Xchange - `ox:`
-- Outlook
-    - `outlook-mac:` to target Outlook on Mac
-    - `outlook-android:` to target Outlook on Android
-    - `ogsc:` and `ogsb:` to target Outlook webmail and iOS dark modes
-- Spark - `spark:`
-- Superhuman - `superhuman:`
-- Thunderbird - `thunderbird:`
-- Yahoo! Mail - `yahoo:`
+The config includes variants that help style elements in specific email clients.
+
+| Provider      | Email Client                       | Variant            |
+|---------------|------------------------------------|--------------------|
+| **Apple**     | Apple Mail 10                      | `apple-mail-10:`   |
+|               | Apple Mail 12+                     | `apple-mail:`      |
+|               | iOS 10                             | `ios-10:`          |
+|               | iOS 13                             | `ios-13:`          |
+|               | iOS 15+                            | `ios-15:`          |
+| **Google**    | Gmail (web)                        | `gmail:`           |
+|               | Gmail (Android)                    | `gmail-android:`   |
+|               | Gmail (iPad)                       | `gmail-ipad:`      |
+| **Microsoft** | Outlook (Mac)                      | `outlook-mac:`     |
+|               | Outlook (Android)                  | `outlook-android:` |
+|               | Outlook (webmail & iOS dark modes) | `ogsc:`, `ogsb:`   |
+| **Webmail**   | Comcast                            | `comcast:`         |
+|               | Freenet                            | `freenet:`         |
+|               | Yahoo! Mail                        | `yahoo:`           |
+| **Other**     | Airmail                            | `airmail:`         |
+|               | Edison (iOS, Android)              | `edison:`          |
+|               | Notion                             | `notion:`          |
+|               | Open-Xchange                       | `ox:`              |
+|               | Spark                              | `spark:`           |
+|               | Superhuman                         | `superhuman:`      |
+|               | Thunderbird                        | `thunderbird:`     |
+
+
 
 ## MSO utilities
 
-The configuration includes an extensive set of MSO (Microsoft Office) utilities that can be used to style emails in specific versions of Outlook (2007-2021), which use the Word rendering engine. 
+The configuration includes an extensive set of MSO (Microsoft Office) utilities that can be used to style emails in specific versions of Outlook (2007-2024), which use the Word rendering engine. 
 
 These utilities are prefixed with `mso-` and can be used in your HTML like so:
 
 ```html
 <div class="mso-hide-all">
-  This will be hidden in Outlook 2007-2021.
+  Hide this from Outlooks that use Word to render HTML.
 </div>
 ```
