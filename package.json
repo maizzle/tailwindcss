@@ -21,7 +21,8 @@
     "./shadows": "./theme/shadows.css",
     "./filters": "./theme/filters.css",
     "./spacing": "./theme/spacing.css",
-    "./borders": "./theme/borders.css"
+    "./borders": "./theme/borders.css",
+    "./animate": "./theme/animate.css"
   },
   "files": [
     "index.css",
