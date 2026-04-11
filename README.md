@@ -38,6 +38,9 @@ You may also import configurations individually:
 @import '@maizzle/tailwindcss/filters';
 @import '@maizzle/tailwindcss/spacing';
 @import '@maizzle/tailwindcss/borders';
+
+/* Prose typography */
+@import '@maizzle/tailwindcss/prose';
 ```
 
 ## Namespaces
@@ -100,6 +103,74 @@ The config includes variants that help style elements in specific email clients.
 |               | Thunderbird                        | `thunderbird:`     |
 
 
+
+## Prose
+
+The `prose` utility provides email-safe typography with vertical rhythm for rendered HTML content, similar to [`@tailwindcss/typography`](https://github.com/tailwindlabs/tailwindcss-typography).
+
+```html
+<div class="prose">
+  {{ content }}
+</div>
+```
+
+### Size presets
+
+Size presets adjust the entire typographic scale and vertical spacing at once:
+
+```html
+<div class="prose prose-lg">
+  {{ content }}
+</div>
+```
+
+Available sizes: `prose-sm`, `prose-base`, `prose-lg`, `prose-xl`.
+
+### Element modifiers
+
+Use element modifiers to style specific elements inside prose:
+
+```html
+<div class="prose prose-h1:text-4xl prose-a:text-blue-600 prose-img:rounded-lg">
+  {{ content }}
+</div>
+```
+
+| Modifier | Target |
+|---|---|
+| `prose-headings:` | `h1`, `h2`, `h3`, `h4`, `h5`, `h6` |
+| `prose-lead:` | `[class~="lead"]` |
+| `prose-h1:` | `h1` |
+| `prose-h2:` | `h2` |
+| `prose-h3:` | `h3` |
+| `prose-h4:` | `h4` |
+| `prose-h5:` | `h5` |
+| `prose-h6:` | `h6` |
+| `prose-p:` | `p` |
+| `prose-a:` | `a` |
+| `prose-blockquote:` | `blockquote` |
+| `prose-figure:` | `figure` |
+| `prose-figcaption:` | `figcaption` |
+| `prose-strong:` | `strong` |
+| `prose-em:` | `em` |
+| `prose-kbd:` | `kbd` |
+| `prose-code:` | `code` (not inside `pre`) |
+| `prose-pre:` | `pre` |
+| `prose-ol:` | `ol` |
+| `prose-ul:` | `ul` |
+| `prose-li:` | `li` |
+| `prose-dl:` | `dl` |
+| `prose-dt:` | `dt` |
+| `prose-dd:` | `dd` |
+| `prose-table:` | `table` |
+| `prose-thead:` | `thead` |
+| `prose-tr:` | `tr` |
+| `prose-th:` | `th` |
+| `prose-td:` | `td` |
+| `prose-img:` | `img` |
+| `prose-picture:` | `picture` |
+| `prose-video:` | `video` |
+| `prose-hr:` | `hr` |
 
 ## MSO utilities
 
