@@ -22,7 +22,8 @@
     "./filters": "./theme/filters.css",
     "./spacing": "./theme/spacing.css",
     "./borders": "./theme/borders.css",
-    "./animate": "./theme/animate.css"
+    "./animate": "./theme/animate.css",
+    "./prose": "./prose.css"
   },
   "files": [
     "index.css",
@@ -30,6 +31,7 @@
     "screens.css",
     "clients.css",
     "mso.css",
+    "prose.css",
     "theme/"
   ],
   "keywords": [
