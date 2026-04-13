@@ -84,7 +84,7 @@ The config includes variants that help style elements in specific email clients.
 |               | Apple Mail 12+                     | `apple-mail:`      |
 |               | iOS 10                             | `ios-10:`          |
 |               | iOS 13                             | `ios-13:`          |
-|               | iOS 15+                            | `ios-15:`          |
+|               | iOS 15+                            | `ios:`             |
 | **Google**    | Gmail (web)                        | `gmail:`           |
 |               | Gmail (Android)                    | `gmail-android:`   |
 |               | Gmail (iPad)                       | `gmail-ipad:`      |
