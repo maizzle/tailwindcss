@@ -34,6 +34,9 @@
     "prose.css",
     "theme/"
   ],
+  "scripts": {
+    "test": "echo \"no tests\""
+  },
   "keywords": [
     "maizzle",
     "tailwindcss",
