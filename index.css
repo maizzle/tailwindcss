@@ -11,4 +11,5 @@
 @import "./mso.css";
 @import "./clients.css";
 
+@import "tailwindcss/theme" source(none);
 @import "tailwindcss/utilities" important;
