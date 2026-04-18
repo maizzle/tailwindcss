@@ -8,6 +8,8 @@
 @import "./theme/spacing.css";
 @import "./theme/borders.css";
 
+@import "./prose.css";
+
 @import "./mso.css";
 @import "./clients.css";
 
