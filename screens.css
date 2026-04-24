@@ -1,6 +1,15 @@
 @theme {
-  --breakpoint-*: initial;
-}
+    --breakpoint-xs: 430px;
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+  }
 
-@variant sm (@media (max-width: 600px));
 @variant xs (@media (max-width: 430px));
+@variant sm (@media (max-width: 600px));
+@variant md (@media (max-width: 768px));
+@variant lg (@media (max-width: 1024px));
+@variant xl (@media (max-width: 1280px));
+@variant 2xl (@media (max-width: 1536px));
