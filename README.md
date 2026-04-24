@@ -47,7 +47,7 @@ You may also import configurations individually:
 
 The following namespaces are customized by this package:
 
-- `--breakpoint-*` - breakpoints are reset and only include `xs` and `sm`
+- `--breakpoint-*` - breakpoints are defined in `px` units and use `max-width`
 - `--spacing` - spacing utilities use a `px` scale instead of `rem`
 - `--color-*` - `oklch` colors have been replaced with their HEX equivalents
 - `--text-*` - font sizes use a `px` spacing scale instead of `rem`
@@ -59,14 +59,18 @@ The following namespaces are customized by this package:
 
 ## Variants
 
-The package registers a few custom variants.
+The package overrides default Tailwind CSS variants and registers a few custom ones.
 
 ### Breakpoints
 
-The `screens` configuration has been overridden to include only two breakpoints:
+The `screens` configuration has been overridden to define desktop-first breakpoiints with `px` units:
 
-- `sm` - max-width: 600px
 - `xs` - max-width: 430px
+- `sm` - max-width: 600px
+- `md` - max-width: 768px
+- `lg` - max-width: 1024px
+- `xl` - max-width: 1280px
+- `2xl` - max-width: 1536px
 
 ### hover:
 
