@@ -1,3 +1,5 @@
+@custom-variant qr (& td.qd);
+
 @theme {
   --color-*: initial;
 
