@@ -1,45 +1,41 @@
 /*
   Prose — email-safe typography for rendered HTML content.
 */
-
-/* --- Element variants --- */
-
-@variant prose-headings (& :is(h1, h2, h3, h4, h5, h6));
-@variant prose-lead (& :is([class~="lead"]));
-@variant prose-h1 (& h1);
-@variant prose-h2 (& h2);
-@variant prose-h3 (& h3);
-@variant prose-h4 (& h4);
-@variant prose-h5 (& h5);
-@variant prose-h6 (& h6);
-@variant prose-p (& p);
-@variant prose-a (& a);
-@variant prose-blockquote (& blockquote);
-@variant prose-figure (& figure);
-@variant prose-figcaption (& figcaption);
-@variant prose-strong (& strong);
-@variant prose-em (& em);
-@variant prose-kbd (& kbd);
-@variant prose-code (& :not(pre) > code);
-@variant prose-pre (& pre);
-@variant prose-ol (& ol);
-@variant prose-ul (& ul);
-@variant prose-li (& li);
-@variant prose-dl (& dl);
-@variant prose-dt (& dt);
-@variant prose-dd (& dd);
-@variant prose-table (& table);
-@variant prose-thead (& thead);
-@variant prose-tr (& tr);
-@variant prose-th (& th);
-@variant prose-td (& td);
-@variant prose-img (& img);
-@variant prose-picture (& picture);
-@variant prose-video (& video);
-@variant prose-hr (& hr);
+@custom-variant prose-headings (& :is(h1, h2, h3, h4, h5, h6));
+@custom-variant prose-lead (& :is([class~="lead"]));
+@custom-variant prose-h1 (& h1);
+@custom-variant prose-h2 (& h2);
+@custom-variant prose-h3 (& h3);
+@custom-variant prose-h4 (& h4);
+@custom-variant prose-h5 (& h5);
+@custom-variant prose-h6 (& h6);
+@custom-variant prose-p (& p);
+@custom-variant prose-a (& a);
+@custom-variant prose-blockquote (& blockquote);
+@custom-variant prose-figure (& figure);
+@custom-variant prose-figcaption (& figcaption);
+@custom-variant prose-strong (& strong);
+@custom-variant prose-em (& em);
+@custom-variant prose-kbd (& kbd);
+@custom-variant prose-code (& :not(pre) > code);
+@custom-variant prose-pre (& pre);
+@custom-variant prose-ol (& ol);
+@custom-variant prose-ul (& ul);
+@custom-variant prose-li (& li);
+@custom-variant prose-dl (& dl);
+@custom-variant prose-dt (& dt);
+@custom-variant prose-dd (& dd);
+@custom-variant prose-table (& table);
+@custom-variant prose-thead (& thead);
+@custom-variant prose-tr (& tr);
+@custom-variant prose-th (& th);
+@custom-variant prose-td (& td);
+@custom-variant prose-img (& img);
+@custom-variant prose-picture (& picture);
+@custom-variant prose-video (& video);
+@custom-variant prose-hr (& hr);
 
 /* --- Base prose — structural defaults --- */
-
 @utility prose {
   @apply text-base;
 
@@ -170,7 +166,6 @@
 }
 
 /* --- Size presets --- */
-
 @utility prose-sm {
   @apply text-sm;
 
