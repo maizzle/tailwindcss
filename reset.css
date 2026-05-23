@@ -3,4 +3,4 @@
 }
 
 /* Prefer pseudo over @media (hover: hover) */
-@variant hover (&:hover);
+@custom-variant hover (&:hover);

@@ -1,18 +1,18 @@
-@variant airmail (.bloop_container &);
+@custom-variant airmail (.bloop_container &);
 
-@variant apple-mail-10 (.Singleton &);
-@variant apple-mail ([class^="apple-mail"] &);
+@custom-variant apple-mail-10 (.Singleton &);
+@custom-variant apple-mail ([class^="apple-mail"] &);
 
-@variant comcast (.mail-detail-content &);
+@custom-variant comcast (.mail-detail-content &);
 
-@variant edison (#edo-container &);
-@variant edison-ios (.edo &);
-@variant edison-android (.edo-email-view &);
+@custom-variant edison (#edo-container &);
+@custom-variant edison-ios (.edo &);
+@custom-variant edison-android (.edo-email-view &);
 
-@variant freenet (body[marginwidth][marginheight] &);
+@custom-variant freenet (body[marginwidth][marginheight] &);
 
-@variant gmail (u + .body &);
-@variant gmail-android (div > u + .body &);
+@custom-variant gmail (u + .body &);
+@custom-variant gmail-android (div > u + .body &);
 @custom-variant gmail-ipad {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
     u + .body & {
@@ -21,24 +21,24 @@
   }
 }
 
-@variant ios-10 (@supports (-webkit-overflow-scrolling:touch) and (color:#ffff));
-@variant ios-13 ([class^="apple-mail"] &);
-@variant ios (@supports (-webkit-overflow-scrolling:touch) and (aspect-ratio: 1 / 1));
+@custom-variant ios-10 (@supports (-webkit-overflow-scrolling:touch) and (color:#ffff));
+@custom-variant ios-13 ([class^="apple-mail"] &);
+@custom-variant ios (@supports (-webkit-overflow-scrolling:touch) and (aspect-ratio: 1 / 1));
 
-@variant notion (#mail-content-wrapper &);
+@custom-variant notion (#mail-content-wrapper &);
 
-@variant ox (&[class^="ox-"] &);
+@custom-variant ox (&[class^="ox-"] &);
 
-@variant ogsc ([data-ogsc] &);
-@variant ogsb ([data-ogsb] &);
+@custom-variant ogsc ([data-ogsc] &);
+@custom-variant ogsb ([data-ogsb] &);
 
-@variant outlook-mac (#converted-body &);
-@variant outlook-android (#converted-body &);
+@custom-variant outlook-mac (#converted-body &);
+@custom-variant outlook-android (#converted-body &);
 
-@variant spark (.c17637 &);
+@custom-variant spark (.c17637 &);
 
-@variant superhuman (.ShadowHTML &);
+@custom-variant superhuman (.ShadowHTML &);
 
-@variant thunderbird (.moz-text-html &);
+@custom-variant thunderbird (.moz-text-html &);
 
-@variant yahoo (.\& &);
+@custom-variant yahoo (.\& &);
